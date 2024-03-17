@@ -1,0 +1,19 @@
+:root {
+    --background-color: #fdf0d5;
+    --main-color: #db2885;
+    --true-color: #504847;
+    --false-color: #5cf074;
+}
+
+html {
+    font-family: "Roboto Mono", "Roboto Mono", Vazirmatn, monospace;
+}
+
+.container {
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
