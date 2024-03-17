@@ -1,8 +1,8 @@
 :root {
     --background-color: #fdf0d5;
     --main-color: #db2885;
-    --true-color: #504847;
-    --false-color: #5cf074;
+    --correct-color: #504847;
+    --wrong-color: #5cf074;
 }
 
 html {

@@ -3,8 +3,10 @@ import styles from './HiddenInput.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../Redux/store'
 import { updateInput } from '../Redux/state/keyboardInput'
+
 const HiddenInput = () => {
   const inputRef = useRef<HTMLInputElement>(null)
+  
   useEffect(() => {
     inputRef.current?.focus()
   }, [])
@@ -15,6 +17,7 @@ const HiddenInput = () => {
   const handleInputChange = (keyboardInput: string) => {
     dispatch(updateInput(keyboardInput))
   }
+
   return (
     <>
       <input
@@ -23,6 +26,8 @@ const HiddenInput = () => {
         onChange={(e) => handleInputChange(e.target.value)}
         ref={inputRef}
       />
+
+      <h1>{keyboardInput}</h1>
     </>
   )
 }
