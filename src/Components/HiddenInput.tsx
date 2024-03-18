@@ -10,8 +10,6 @@ const HiddenInput = () => {
   useEffect(() => {
     inputRef.current?.focus()
   }, [])
-
-  const keyboardInput = useSelector((state: RootState) => state.keyboardInput.value)
   const dispatch = useDispatch()
 
   const handleInputChange = (keyboardInput: string) => {
@@ -26,8 +24,6 @@ const HiddenInput = () => {
         onChange={(e) => handleInputChange(e.target.value)}
         ref={inputRef}
       />
-
-      <h1>{keyboardInput}</h1>
     </>
   )
 }

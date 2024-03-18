@@ -1,4 +1,5 @@
 import './App.css'
+import Caret from './Components/Caret'
 import HiddenInput from './Components/HiddenInput'
 import TypeParagraph from './Components/TypeParagraph'
 
@@ -7,6 +8,7 @@ function App() {
     <div className="container">
       <HiddenInput />
       <TypeParagraph />
+      <Caret />
     </div>
   )
 }

@@ -1,13 +1,13 @@
 .paragraph {
     color: var(--main-color);
-    font-size: 25px;
-    width: 800px;
+    font-size: 28px;
+    width: 1200px;
 }
 
-.correct{
+.correct {
     color: var(--correct-color);
 }
 
-.wrong{
+.wrong {
     color: var(--wrong-color);
 }

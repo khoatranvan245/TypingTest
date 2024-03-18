@@ -1,0 +1,22 @@
+.caret {
+    height: 28px;
+    width: 0;
+    border: 2px solid var(--main-color);
+    position: absolute;
+    transition: left 0.1s linear;
+    animation: caretAnimation 0.7s linear infinite alternate;
+}
+
+.animation {
+    animation: caret 1s infinite alternate;
+}
+
+@keyframes caretAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

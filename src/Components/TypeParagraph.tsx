@@ -2,7 +2,6 @@ import styles from './TypeParagraph.module.css'
 import { convertStringToArray } from '../Utils/ConvertStringToArray'
 import { RootState } from '../Redux/store'
 import { useSelector } from 'react-redux'
-import { current } from '@reduxjs/toolkit'
 
 const TypeParagraph = () => {
   const testStringArray = convertStringToArray(
@@ -10,6 +9,7 @@ const TypeParagraph = () => {
   )
 
   const keyboardInput = useSelector((state: RootState) => state.keyboardInput.value)
+
   const keyboardInputArray = convertStringToArray(keyboardInput)
 
   document.querySelectorAll('span').forEach((span) => {
@@ -17,13 +17,14 @@ const TypeParagraph = () => {
   })
 
   keyboardInputArray.forEach((letter, index) => {
-    const currentLetter = document.querySelector(`.span${index}`)
+    const currentLetter = document.querySelector<HTMLElement>(`.span${index}`)
     if (letter === testStringArray[index]) {
       currentLetter?.classList.add(styles.correct)
     } else {
       currentLetter?.classList.add(styles.wrong)
     }
   })
+
   return (
     <p className={styles.paragraph}>
       {testStringArray.map((letter, index) => {

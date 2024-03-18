@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import keyboardInputReducer from './state/keyboardInput'
+import caretPositionReducer from './state/caretPosition'
 
 export const store = configureStore({
   reducer: {
-    keyboardInput: keyboardInputReducer
+    keyboardInput: keyboardInputReducer,
+    caretPostion: caretPositionReducer
   },
 })
 
