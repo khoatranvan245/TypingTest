@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="container">
       <HiddenInput />
-      <TypeParagraph />
-      <Caret />
+      <TypeParagraph>
+        <Caret />
+      </TypeParagraph>
     </div>
   )
 }

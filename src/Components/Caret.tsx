@@ -24,8 +24,8 @@ const Caret = () => {
     } else {
       dispatch(
         updatePosition({
-          top: '344px',
-          left: '168px',
+          top: '0px',
+          left: '0px',
         })
       )
     }

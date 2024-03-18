@@ -2,8 +2,9 @@ import styles from './TypeParagraph.module.css'
 import { convertStringToArray } from '../Utils/ConvertStringToArray'
 import { RootState } from '../Redux/store'
 import { useSelector } from 'react-redux'
+import { ReactNode } from 'react'
 
-const TypeParagraph = () => {
+const TypeParagraph = ({children} : {children: ReactNode}) => {
   const testStringArray = convertStringToArray(
     'this is a test string, if you want to test it type on your keyboard to give it a try haha it not that difficult'
   )
@@ -37,6 +38,7 @@ const TypeParagraph = () => {
           </span>
         )
       })}
+      {children}
     </p>
   )
 }

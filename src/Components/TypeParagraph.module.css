@@ -2,6 +2,7 @@
     color: var(--main-color);
     font-size: 28px;
     width: 1200px;
+    position: relative;
 }
 
 .correct {

@@ -6,8 +6,8 @@ type caretPositonState = {
 }
 
 const initialState: caretPositonState = {
-  top: '344px',
-  left: '168px',
+  top: '0px',
+  left: '0px',
 }
 
 const caretPositonSlice = createSlice({
