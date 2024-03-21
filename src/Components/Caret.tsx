@@ -11,7 +11,6 @@ const Caret = () => {
   const dispatch = useDispatch()
 
   const currentLetter = document.querySelector<HTMLElement>(`.span${keyboardInput.length - 1}`)
-  console.log(currentLetter)
 
   useEffect(() => {
     if (currentLetter !== null) {

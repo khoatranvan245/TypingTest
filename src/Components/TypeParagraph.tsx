@@ -4,7 +4,7 @@ import { RootState } from '../Redux/store'
 import { useSelector } from 'react-redux'
 import { ReactNode } from 'react'
 
-const TypeParagraph = ({children} : {children: ReactNode}) => {
+const TypeParagraph = ({ children }: { children: ReactNode }) => {
   const testStringArray = convertStringToArray(
     'this is a test string, if you want to test it type on your keyboard to give it a try haha it not that difficult'
   )
@@ -27,7 +27,7 @@ const TypeParagraph = ({children} : {children: ReactNode}) => {
   })
 
   return (
-    <p className={styles.paragraph}>
+    <div className={styles.paragraph}>
       {testStringArray.map((letter, index) => {
         return (
           <span
@@ -39,7 +39,7 @@ const TypeParagraph = ({children} : {children: ReactNode}) => {
         )
       })}
       {children}
-    </p>
+    </div>
   )
 }
 

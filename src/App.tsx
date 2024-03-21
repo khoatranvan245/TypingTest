@@ -1,6 +1,7 @@
 import './App.css'
 import Caret from './Components/Caret'
 import HiddenInput from './Components/HiddenInput'
+import ResetButton from './Components/ResetButton'
 import TypeParagraph from './Components/TypeParagraph'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <TypeParagraph>
         <Caret />
       </TypeParagraph>
+      <ResetButton/>
     </div>
   )
 }

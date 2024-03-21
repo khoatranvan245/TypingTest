@@ -3,6 +3,8 @@
     font-size: 28px;
     width: 1200px;
     position: relative;
+    line-height: 40px;
+    user-select: none;
 }
 
 .correct {
